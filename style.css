@@ -6,9 +6,11 @@ body {
     display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -28,29 +30,36 @@ html {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
+
     list-style: none;
   }
 
 
-.header {
+.header,
+.footer {
     background-color: lightskyblue;
 }
 
 
 
- .nav-link {
+ .nav-link,
+ .footer-link {
     padding: 0 20px;
+
     line-height: 50px;
     text-decoration: none;
     font-size: 20px;
     font-family: "IBM Plex Sans Condensed";
     text-transform: uppercase;
+
     color: whitesmoke;
+
     transition: 0.3s;
   }
 
 
-  .nav-link:hover {
+  .nav-link:hover,
+  .footer-link:hover {
     color: midnightblue
   }
 
@@ -83,6 +92,7 @@ html {
     font-size: 48px;
     font-family: "IBM Plex Sans Condensed";
     letter-spacing: 5px;
+
     color: rosybrown;
   }
 
@@ -96,17 +106,21 @@ html {
     align-items: center;
   }
   .profile-text-bold {
-    color: midnightblue;
     font-weight: bold;
+
+    color: midnightblue;
   }
 
-  .profile-text,   .section-text {
+  .profile-text,
+  .section-text {
     padding: 20px;
+
     font-size: 24px;
   }
 
   .section-list {
     padding-left: 0px;
+
     list-style: none;
   }
 
@@ -114,6 +128,7 @@ html {
     font-family: "IBM Plex Sans Condensed";
     font-size: 30px;
     letter-spacing: 1px;
+
     color: rosybrown;
   }
 
@@ -125,12 +140,15 @@ html {
   .section-link {
     text-decoration: none;
     font-weight: bold;
+
     color: black;
+
     transition: 0.3s;
   }
 
   .section-link:hover {
     letter-spacing: 1px;
+
     color: midnightblue;
   }
 
@@ -138,3 +156,14 @@ html {
     color: midnightblue;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-year {
+    letter-spacing: 3px;
+
+    color: rosybrown;
+}
