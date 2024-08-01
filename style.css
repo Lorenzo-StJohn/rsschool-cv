@@ -1,3 +1,140 @@
-h1 {
-    text-align: center;
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+  }
+
+
+.header {
+    background-color: lightskyblue;
+}
+
+
+
+ .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "IBM Plex Sans Condensed";
+    text-transform: uppercase;
+    color: whitesmoke;
+    transition: 0.3s;
+  }
+
+
+  .nav-link:hover {
+    color: midnightblue
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:first baseline;
+  }
+
+  .section:nth-child(even) {
+    text-align: left;
+    padding: 20px;
+  }
+  .section:nth-child(odd) {
+    text-align: right;
+    padding: 20px;
+  }
+  
+  .section {
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+ .profile-name {
+    font-size: 48px;
+    font-family: "IBM Plex Sans Condensed";
+    letter-spacing: 5px;
+    color: rosybrown;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+ 
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .profile-text-bold {
+    color: midnightblue;
+    font-weight: bold;
+  }
+
+  .profile-text,   .section-text {
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .section-list {
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  .section-title {
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rosybrown;
+  }
+
+
+  .section-item {
+    font-style: italic;
+  }
+
+  .section-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .section-link:hover {
+    letter-spacing: 1px;
+    color: midnightblue;
+  }
+
+.section-code {
+    color: midnightblue;
+}
+
