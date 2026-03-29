@@ -37,7 +37,7 @@
 }
 
 *:focus {
-  outline: none;
+  outline: 1px solid var(--heading-color);
 }
 
 html {
@@ -155,6 +155,10 @@ h1 {
 .contact-and-skills > *,
 .projects-and-education > * {
   flex: 1;
+}
+
+#contact li {
+  margin-right: 10px;
 }
 
 #contact a,
