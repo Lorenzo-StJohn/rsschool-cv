@@ -29,9 +29,59 @@
       </article>
       <article id="skills">
         <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>Node.js</li>
+          <li>Angular</li>
+        </ul>
       </article>
       <article id="code">
         <h2>My Code Example</h2>
+        <pre>
+          <code>
+import { WebSocket } from 'ws';
+
+const wsMap = new Map&lt;WebSocket, number&gt;();
+
+//Prevent squashing important messages on React client-side
+export const SAFE_DELAY = 30;
+
+export const sendWs = (clients: WebSocket[], data: any, type: string) => {
+  if (clients.length === 0) return;
+
+  const dateNow = Date.now();
+  const delay = clients.reduce((accumulator, currentClient) => {
+    const lastSendTime = wsMap.get(currentClient) ?? 0;
+    const currentDelay = Math.max(lastSendTime + SAFE_DELAY - dateNow, 0);
+    return Math.max(accumulator, currentDelay);
+  }, 0);
+
+  const currentSendTime = dateNow + delay;
+  clients.forEach((client) => {
+    wsMap.set(client, currentSendTime);
+  });
+
+  const payload = JSON.stringify({
+    type,
+    data,
+    id: 0,
+  });
+
+  setTimeout(() => {
+    clients.forEach((client) => {
+      if (client.readyState === WebSocket.OPEN) {
+        client.send(payload);
+      } else {
+        wsMap.delete(client);
+      }
+    });
+  }, delay);
+};
+          </code>
+        </pre>
       </article>
       <article id="projects">
         <h2>My Completed Educational Projects</h2>
@@ -44,10 +94,7 @@
       <a href="https://github.com/Lorenzo-StJohn" target="_blank">My GitHub</a>
       <span>2026</span>
       <a href="https://rs.school/courses/javascript-preschool-ru"
-        ><img
-          src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/refs/heads/master/tasks/cv/rs-school-logo.svg"
-          alt=""
-        >
+        ><img src="./assets/rs-school-logo.svg" alt="">
       </a>
     </footer>
   </body>
