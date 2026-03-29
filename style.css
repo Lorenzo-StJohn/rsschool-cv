@@ -56,10 +56,6 @@ a {
   transition: color 0.5s ease-in-out;
 }
 
-a:hover {
-  color: var(--link-hover-color);
-}
-
 ul {
   list-style: none;
 }
@@ -136,7 +132,8 @@ section > * {
   flex: 1;
 }
 
-#contact a {
+#contact a,
+footer a {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -152,16 +149,16 @@ section > * {
   transition: background-color 0.5s ease-in-out;
 }
 
-a:hover .icon {
-  background-color: var(--link-hover-color);
-}
-
 .discord {
   mask-image: url('./assets/discord-svgrepo-com.svg');
 }
 
 .telegram {
   mask-image: url('./assets/telegram-svgrepo-com-2.svg');
+}
+
+.github {
+  mask-image: url('./assets/github-svgrepo-com.svg');
 }
 
 #skills li,
@@ -189,6 +186,30 @@ strong {
   font-weight: bold;
 }
 
+.rs-school-logo {
+  height: 30px;
+}
+
+footer {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+footer > * {
+  flex: 1 1 1;
+}
+
+footer a {
+  margin: 0;
+}
+
 @media (max-width: 540px) {
   .contact-and-skills {
     flex-direction: column;
@@ -200,5 +221,21 @@ strong {
   .projects-and-education {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
+  a:hover .icon {
+    background-color: var(--link-hover-color);
   }
 }
