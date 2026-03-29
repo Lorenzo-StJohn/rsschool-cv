@@ -164,14 +164,18 @@ a:hover .icon {
   mask-image: url('./assets/telegram-svgrepo-com-2.svg');
 }
 
-#skills li {
+#skills li,
+#projects li,
+#education li {
   margin-top: 10px;
   padding-left: 14px;
   position: relative;
   line-height: 1;
 }
 
-#skills li::before {
+#skills li::before,
+#projects li::before,
+#education li::before {
   content: '';
   position: absolute;
   bottom: 2.4px;
@@ -181,8 +185,19 @@ a:hover .icon {
   height: 6px;
 }
 
+strong {
+  font-weight: bold;
+}
+
 @media (max-width: 540px) {
-  section {
+  .contact-and-skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-and-education {
     flex-direction: column;
     gap: 20px;
   }
