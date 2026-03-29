@@ -1,147 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>cv</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="./assets/img/176770038.ico">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet">
-	</head>
-	<body>
-		<header class="header">
-			<div class="container">
-				<nav class="nav">
-					<ul class="nav-list">
-						<li class="nav-item">
-							<a href="#contacts" class="nav-link">My Contacts</a>
-						</li>
-						<li class="nav-item">
-							<a href="#myself" class="nav-link">About Myself</a>
-						</li>
-						<li class="nav-item">
-							<a href="#knowledge" class="nav-link">About my Knowledge</a>
-						</li>
-						<li class="nav-item">
-							<a href="#code-example" class="nav-link">Code Example</a>
-						</li>
-						<li class="nav-item">
-							<a href="#experience" class="nav-link">About Experience</a>
-						</li>
-						<li class="nav-item">
-							<a href="#education" class="nav-link">About Education</a>
-						</li>
-						<li class="nav-item">
-							<a href="#english-level" class="nav-link">About English level</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="main">
-			<div class="container">
-				<div class="main-container">
-					<section class="section" id="profile">
-						<h1 class="profile-name">Svetlana Arzamastceva</h1>
-						<div class="wrapper">
-							<img
-								class="profile-img"
-								src="./assets/img/176770038.png"
-								alt="my avatar">
-							<p class="profile-text">
-								JS/FE Pre-School <span class="profile-text-bold">Student</span>
-							</p>
-						</div>
-					</section>
-					<section class="section" id="contacts">
-						<h2 class="section-title">My Contacts</h2>
-						<ul class="section-list">
-							<li class="section-item">
-								<p>
-									My E-mail:
-									<a href="mailto:britishaccent@bk.ru" class="section-link"
-										>britishaccent@bk.ru</a
-									>
-								</p>
-							</li>
-							<li class="section-item">
-								<p>
-									My Discord Name:
-									<a
-										href="https://discordapp.com/users/850354927120285726/"
-										class="section-link"
-										>Lorenzo (@ Lorenzo-StJohn)</a
-									>
-								</p>
-							</li>
-						</ul>
-					</section>
-					<section class="section" id="myself">
-						<h2 class="section-title">About Myself</h2>
-						<p>
-							I like
-							<a
-								href="https://codeforces.com/profile/Lorenzo"
-								class="section-link"
-								>sport programming</a
-							>
-							very much.
-						</p>
-					</section>
-					<section class="section" id="knowledge">
-						<h2 class="section-title">About my Knowledge</h2>
-						<p>
-							I'm pretty new ti JS but I'm a little experienced at C++ and Java.
-						</p>
-					</section>
-					<section class="section" id="code-example">
-						<h2 class="section-title">Code Example</h2>
-						<p>
-							<code class="section-code">
-								function multiply(a, b){
-								<br>return a * b <br>}
-							</code>
-						</p>
-					</section>
-					<section class="section" id="experience">
-						<h2 class="section-title">About Experience</h2>
-						<p>Now I'm working on CV project.</p>
-					</section>
-					<section class="section" id="education">
-						<h2 class="section-title">About Education</h2>
-						<p>
-							I studied Computer Science for three years at Samara University.
-						</p>
-					</section>
-					<section class="section" id="english-level">
-						<h2 class="section-title">About English level</h2>
-						<p>My English lever is about Pre-Intermediate I assume.</p>
-					</section>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<a
-						class="footer-link"
-						href="https://github.com/Lorenzo-StJohn/rsschool-cv"
-						>https://github.com/Lorenzo-StJohn/rsschool-cv</a
-					>
-					<p class="footer-year">2024</p>
-					<a href="https://rs.school/courses/javascript-ru"
-						><img src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
-				</div>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#self-introduction">About Me</a></li>
+          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="self-introduction">
+        <img
+          src="./assets/ChatGPT-Image.webp"
+          alt="ChatGPT-Image"
+          class="avatar"
+        >
+        <h1>Svetlana Arzamastceva</h1>
+        <h2 class="about-me">About Me</h2>
+        <p class="about-me-text">
+          Motivated and detail-oriented Junior Front-End Developer who enjoys
+          creating clean and intuitive interfaces. I have a keen interest in
+          JavaScript ecosystems, including TypeScript for scalable applications,
+          Node.js for backend development, and Angular for building robust
+          single-page applications. Always eager to learn and improve my skills
+          in these technologies.
+        </p>
+      </article>
+      <section class="contact-and-skills">
+        <article id="contact">
+          <h2>My Contacts</h2>
+          <ul>
+            <li>
+              <a
+                href="https://discord.com/users/850354927120285726"
+                target="_blank"
+              >
+                <span class="icon discord"></span>
+                Lorenzo (@Lorenzo-StJohn)
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/some_per_son" target="_blank">
+                <span class="icon telegram"></span>
+                @some_per_son
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article id="skills">
+          <h2>My Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>Node.js</li>
+            <li>Angular</li>
+          </ul>
+        </article>
+      </section>
+      <article id="code">
+        <h2>My Code Example</h2>
+        <pre>
+          <code>
+import { WebSocket } from 'ws';
+
+const wsMap = new Map&lt;WebSocket, number&gt;();
+
+//Prevent squashing important messages on React client-side
+export const SAFE_DELAY = 30;
+
+export const sendWs = (clients: WebSocket[], data: any, type: string) => {
+  if (clients.length === 0) return;
+
+  const dateNow = Date.now();
+  const delay = clients.reduce((accumulator, currentClient) => {
+    const lastSendTime = wsMap.get(currentClient) ?? 0;
+    const currentDelay = Math.max(lastSendTime + SAFE_DELAY - dateNow, 0);
+    return Math.max(accumulator, currentDelay);
+  }, 0);
+
+  const currentSendTime = dateNow + delay;
+  clients.forEach((client) => {
+    wsMap.set(client, currentSendTime);
+  });
+
+  const payload = JSON.stringify({
+    type,
+    data,
+    id: 0,
+  });
+
+  setTimeout(() => {
+    clients.forEach((client) => {
+      if (client.readyState === WebSocket.OPEN) {
+        client.send(payload);
+      } else {
+        wsMap.delete(client);
+      }
+    });
+  }, delay);
+};
+          </code>
+        </pre>
+      </article>
+      <section class="projects-and-education">
+        <article id="projects">
+          <h2>My Completed Educational Projects</h2>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Lorenzo-StJohn/crud-api"
+                target="_blank"
+              >
+                CRUD API, Node.js, 2026
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Lorenzo-StJohn/node-data-processing-cli"
+                target="_blank"
+                >Data Processing CLI, Node.js, 2026</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Lorenzo-StJohn/node-nodejs-fundamentals"
+                target="_blank"
+                >Node.js Fundamentals, Node.js, 2026</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://lorenzo-stjohn-decision-making-tool.netlify.app"
+                target="_blank"
+                >Decision making tool , stage 2, 2025</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFE2024Q4/nonograms/"
+                target="_blank"
+              >
+                RSS Nonograms, stage 1, 2025
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFE2024Q4/simon-says/"
+                target="_blank"
+                >Simon says, stage 1, 2025</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFE2024Q4/christmas-shop/"
+                target="_blank"
+                >Christmas Shop, stage 1, 2024</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFEPRESCHOOL2024Q2/random-game/"
+                target="_blank"
+                >Spidersweeper, pre-school, 2024</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFEPRESCHOOL2024Q2/image-gallery/"
+                target="_blank"
+              >
+                Image gallery, pre-school, 2024</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFEPRESCHOOL2024Q2/audio-player/index.html"
+                target="_blank"
+              >
+                Audio-player, pre-school, 2024
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lorenzo-stjohn.github.io/cssMemeSlider/cssMemeSlider/index.html"
+                target="_blank"
+              >
+                CSS Meme Slider , pre-school, 2024
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://rolling-scopes-school.github.io/lorenzo-stjohn-JSFEPRESCHOOL2024Q2/shelter/"
+                target="_blank"
+                >Shelter, pre-school, 2024</a
+              >
+            </li>
+          </ul>
+        </article>
+        <article id="education">
+          <h2>My Education and English Proficiency</h2>
+          <ul>
+            <li>
+              <a
+                href="https://app.rs.school/certificate/6g7v0ucx"
+                target="_blank"
+                >Javascript/Front-End 2024Q4, RS School, TOP-3</a
+              >
+            </li>
+            <li><strong>English:</strong> B2 (Upper-Immediate)</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/Lorenzo-StJohn" target="_blank"
+        ><span class="icon github"></span>/Lorenzo-StJohn</a
+      >
+      <p>2026</p>
+      <a
+        href="https://rs.school/courses/javascript-preschool-ru"
+        target="_blank"
+        ><img
+          src="./assets/rs-school-logo.svg"
+          alt="rs-school-logo"
+          class="rs-school-logo"
+          title="RS School"
+        >
+      </a>
+    </footer>
+  </body>
 </html>
