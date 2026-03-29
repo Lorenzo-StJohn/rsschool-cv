@@ -17,6 +17,29 @@
   --link-hover-color: #b4637a;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--subheading-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--heading-color);
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--link-color);
+  color: var(--base-bg);
+}
+
+*:focus {
+  outline: 1px solid var(--heading-color);
+}
+
 html {
   background-color: var(--base-bg);
   color: var(--plain-text-color);
@@ -123,13 +146,19 @@ h1 {
   text-align: justify;
 }
 
-section {
+.contact-and-skills,
+.projects-and-education {
   display: flex;
   padding: 0 10px;
 }
 
-section > * {
+.contact-and-skills > *,
+.projects-and-education > * {
   flex: 1;
+}
+
+#contact li {
+  margin-right: 10px;
 }
 
 #contact a,
